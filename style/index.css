@@ -1,0 +1,233 @@
+@font-face {
+  font-family: "Jost";
+  src: url("../fonts/Jost-Italic.woff2") format("woff2"), url("../fonts/Jost-Italic.woff") format("woff"), url("../fonts/Jost-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Jost";
+  src: url("../fonts/Jost-Bold.woff2") format("woff2"), url("../fonts/Jost-Bold.woff") format("woff"), url("../fonts/Jost-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Jost";
+  src: url("../fonts/Jost-SemiBoldItalic.woff2") format("woff2"), url("../fonts/Jost-SemiBoldItalic.woff") format("woff"), url("../fonts/Jost-SemiBoldItalic.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Jost";
+  src: url("../fonts/Jost-BlackItalic.woff2") format("woff2"), url("../fonts/Jost-BlackItalic.woff") format("woff"), url("../fonts/Jost-BlackItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Jost";
+  src: url("../fonts/Jost-SemiBold.woff2") format("woff2"), url("../fonts/Jost-SemiBold.woff") format("woff"), url("../fonts/Jost-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Jost";
+  src: url("../fonts/Jost-ExtraLightItalic.woff2") format("woff2"), url("../fonts/Jost-ExtraLightItalic.woff") format("woff"), url("../fonts/Jost-ExtraLightItalic.ttf") format("truetype");
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Jost";
+  src: url("../fonts/Jost-ExtraLight.woff2") format("woff2"), url("../fonts/Jost-ExtraLight.woff") format("woff"), url("../fonts/Jost-ExtraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Jost";
+  src: url("../fonts/Jost-Thin.woff2") format("woff2"), url("../fonts/Jost-Thin.woff") format("woff"), url("../fonts/Jost-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Jost";
+  src: url("../fonts/Jost-ExtraBold.woff2") format("woff2"), url("../fonts/Jost-ExtraBold.woff") format("woff"), url("../fonts/Jost-ExtraBold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Jost";
+  src: url("../fonts/Jost-BoldItalic.woff2") format("woff2"), url("../fonts/Jost-BoldItalic.woff") format("woff"), url("../fonts/Jost-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Jost";
+  src: url("../fonts/Jost-Regular.woff2") format("woff2"), url("../fonts/Jost-Regular.woff") format("woff"), url("../fonts/Jost-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Jost";
+  src: url("../fonts/Jost-ExtraBoldItalic.woff2") format("woff2"), url("../fonts/Jost-ExtraBoldItalic.woff") format("woff"), url("../fonts/Jost-ExtraBoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Jost";
+  src: url("../fonts/Jost-ThinItalic.woff2") format("woff2"), url("../fonts/Jost-ThinItalic.woff") format("woff"), url("../fonts/Jost-ThinItalic.ttf") format("truetype");
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Jost";
+  src: url("../fonts/Jost-Light.woff2") format("woff2"), url("../fonts/Jost-Light.woff") format("woff"), url("../fonts/Jost-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Jost";
+  src: url("../fonts/Jost-Black.woff2") format("woff2"), url("../fonts/Jost-Black.woff") format("woff"), url("../fonts/Jost-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Jost";
+  src: url("../fonts/Jost-Medium.woff2") format("woff2"), url("../fonts/Jost-Medium.woff") format("woff"), url("../fonts/Jost-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Jost";
+  src: url("../fonts/Jost-LightItalic.woff2") format("woff2"), url("../fonts/Jost-LightItalic.woff") format("woff"), url("../fonts/Jost-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Jost";
+  src: url("../fonts/Jost-MediumItalic.woff2") format("woff2"), url("../fonts/Jost-MediumItalic.woff") format("woff"), url("../fonts/Jost-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Joti One";
+  src: url("../fonts/JotiOne-Regular.woff2") format("woff2"), url("../fonts/JotiOne-Regular.woff") format("woff"), url("../fonts/JotiOne-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+* {
+  margin: 0;
+}
+
+body {
+  margin-top: 40px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body header {
+  display: flex;
+  justify-content: center;
+}
+body header h1 {
+  font-family: "Joti One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 85px;
+  letter-spacing: 0.03em;
+  width: 446px;
+  height: 79px;
+  margin-left: 33px;
+}
+body main .inp_forms {
+  margin-top: 66px;
+  display: flex;
+  flex-direction: column;
+}
+body main .inp_forms .inp {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 46px;
+  letter-spacing: none;
+  width: 753px;
+  height: 63px;
+  border: 5px solid #815F34;
+  border-radius: 15px;
+  margin-bottom: 13px;
+  margin-right: 49px;
+  padding-left: 15px;
+}
+body main .inp_forms div {
+  display: flex;
+  align-items: center;
+}
+body main .inp_forms .add {
+  width: 619px;
+  margin-bottom: 0;
+  margin-right: 23px;
+}
+body main .inp_forms button {
+  width: 109px;
+  height: 63px;
+  border: 5px solid #815F34;
+  border-radius: 15px;
+  background: white;
+}
+body main .task-block {
+  display: flex;
+  margin-top: 38px;
+  align-items: center;
+  margin-bottom: 38px;
+}
+body main .task-block .task-list {
+  width: 753px;
+  height: 509px;
+  border: 5px solid #815F34;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+body main .task-block .img_vibes {
+  background-image: url("/image/bg-disp-tasks.png");
+  border-radius: 5px;
+  width: 173px;
+  height: 516px;
+}
+body main .progress {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body main .progress progress {
+  width: 946px;
+  height: 50px;
+}
+body main .progress p {
+  font-family: "Joti One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: 0.03em;
+}
+
+/*# sourceMappingURL=index.css.map */
