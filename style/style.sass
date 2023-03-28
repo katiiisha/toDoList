@@ -61,6 +61,41 @@ body
             .task-list 
                 +block_design(753px, 509px, 5px)
                 margin-right: 20px
+                padding: 36px
+                display: flex
+                overflow: scroll
+                align-self: center
+                box-sizing: border-box
+                .task-board 
+                    padding-left: 0
+                    .li 
+                        display: flex
+                        list-style-type: none
+                        .task
+                            +font_style('Jost', normal, 500, 22px, 30px, none)
+                            +block_design(427px, 75px, 10px)
+                            display: inline-block
+                            background-color: #F6F6F5
+                            border: 0px solid white
+                            border-left: 15px solid #A13822
+                            margin: 0 24px 43px 0
+                        .btn_del
+                            +block_design(75px, 75px, 10px)
+                            
+                            background-color: #F6F6F5
+                            border: none
+                            padding: 15px
+                            margin-left: 100px
+                        .check_input 
+                            position: absolute
+                            appearance: none
+                            -webkit-appearance: none
+                            -webkit-appearance: none
+                        .check_box 
+                            position: absolute
+                            width: 75px
+                            height: 75px
+                            background-image: url(/image/check_none.svg)
                 
             .img_vibes
                 background-image: url("/image/bg-disp-tasks.png")

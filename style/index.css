@@ -205,6 +205,57 @@ body main .task-block .task-list {
   border: 5px solid #815F34;
   border-radius: 5px;
   margin-right: 20px;
+  padding: 36px;
+  display: flex;
+  overflow: scroll;
+  align-self: center;
+  box-sizing: border-box;
+}
+body main .task-block .task-list .task-board {
+  padding-left: 0;
+}
+body main .task-block .task-list .task-board .li {
+  display: flex;
+  list-style-type: none;
+}
+body main .task-block .task-list .task-board .li .task {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 30px;
+  letter-spacing: none;
+  width: 427px;
+  height: 75px;
+  border: 5px solid #815F34;
+  border-radius: 10px;
+  display: inline-block;
+  background-color: #F6F6F5;
+  border: 0px solid white;
+  border-left: 15px solid #A13822;
+  margin: 0 24px 43px 0;
+}
+body main .task-block .task-list .task-board .li .btn_del {
+  width: 75px;
+  height: 75px;
+  border: 5px solid #815F34;
+  border-radius: 10px;
+  background-color: #F6F6F5;
+  border: none;
+  padding: 15px;
+  margin-left: 100px;
+}
+body main .task-block .task-list .task-board .li .check_input {
+  position: absolute;
+  appearance: none;
+  -webkit-appearance: none;
+  -webkit-appearance: none;
+}
+body main .task-block .task-list .task-board .li .check_box {
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  background-image: url(/image/check_none.svg);
 }
 body main .task-block .img_vibes {
   background-image: url("/image/bg-disp-tasks.png");

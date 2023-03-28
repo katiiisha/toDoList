@@ -31,18 +31,23 @@ const RenderTask = (task) => {
         const li = document.createElement('li');
         const inp = document.createElement('input');
         const btn_del = document.createElement('button');
+        const label = document.createElement('label');
         const checkbox = document.createElement('input');
+        const customCheck = document.createElement('span');
 
         // задаем клаасы элементам 
         li.className = 'li';
         inp.className = 'task';
         btn_del.className = 'btn_del';
+        customCheck.className = 'check_box';
         checkbox.className = 'check_input';
-        checkbox.type= 'checkbox'
+        checkbox.type = 'checkbox';
+        label.className = 'check option';
         
 
         // добавляем элементы в html разметку
-        li.append(inp, btn_del, checkbox);
+        label.append(checkbox, customCheck);
+        li.append(inp, label, btn_del );
         ul.append(li);
         inp.value = task.text
         btn_del.innerHTML = '<img src="/image/delete.svg">'
