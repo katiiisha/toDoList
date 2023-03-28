@@ -181,12 +181,12 @@ body main .inp_forms div {
   display: flex;
   align-items: center;
 }
-body main .inp_forms .add {
+body main .inp_forms div .add {
   width: 619px;
   margin-bottom: 0;
   margin-right: 23px;
 }
-body main .inp_forms button {
+body main .inp_forms div .btn {
   width: 109px;
   height: 63px;
   border: 5px solid #815F34;
