@@ -21,11 +21,21 @@ btn.addEventListener('click', () => {
     RenderTask();
     add.value = '';
 })
+
+search.addEventListener('keyup', () => {
+    RenderTask();
+})
+
 const RenderTask = (task) => { 
-    
     ul.innerHTML = '';
+    //поиск по задачам 
+    const query = search.value || '';
+    const SearchTask = tasks.filter((task) => { 
+        if (query == '') return true;
+        return task.text.toLowerCase().includes(query.toLowerCase());
+    })
     //добавляем задачу на страницу
-    tasks.forEach(task => { 
+    SearchTask.forEach(task => { 
         
         //создаем элементы 
         const li = document.createElement('li');
@@ -51,5 +61,18 @@ const RenderTask = (task) => {
         ul.append(li);
         inp.value = task.text
         btn_del.innerHTML = '<img src="/image/delete.svg">'
+
+       //меняем стиль инпута с задачей при клике на чекбокс
+        checkbox.addEventListener("change", function () {
+            if (this.checked) {
+                inp.classList.add('green')
+            } else { 
+                inp.classList.remove('green')
+            }
+        })
+        
+
+        
     })
 }
+

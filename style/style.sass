@@ -79,23 +79,27 @@ body
                             border: 0px solid white
                             border-left: 15px solid #A13822
                             margin: 0 24px 43px 0
+                            &.green 
+                                border-left: 15px solid #01504A
                         .btn_del
                             +block_design(75px, 75px, 10px)
-                            
                             background-color: #F6F6F5
                             border: none
                             padding: 15px
-                            margin-left: 100px
-                        .check_input 
-                            position: absolute
+                            margin-left: 24px
+                        .check_input  
                             appearance: none
                             -webkit-appearance: none
-                            -webkit-appearance: none
+                            -moz-appearance: none
                         .check_box 
-                            position: absolute
+                            display: inline-block
                             width: 75px
                             height: 75px
                             background-image: url(/image/check_none.svg)
+
+                        .check_input:checked+.check_box 
+                            background: url(/image/check_box.svg)  
+                            
                 
             .img_vibes
                 background-image: url("/image/bg-disp-tasks.png")
