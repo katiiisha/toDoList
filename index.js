@@ -3,6 +3,7 @@ const search = document.querySelector('.search');
 const add = document.querySelector('.add');
 const btn = document.querySelector('.btn');
 const ul = document.querySelector('.task-board');
+const progress = document.querySelector('progress');
 
 //массив для хранения задач
 const tasks = [];
@@ -17,14 +18,20 @@ btn.addEventListener('click', () => {
     task.text = add.value;
     task.id = new Date().getTime()
     task.done = false;
+    add.value = '';
+    search.value = '';
     addTask(task);
     RenderTask();
-    add.value = '';
+   
+    
+    
 })
 
 search.addEventListener('keyup', () => {
     RenderTask();
 })
+
+let countDone = 0
 
 const RenderTask = (task) => { 
     ul.innerHTML = '';
@@ -59,20 +66,56 @@ const RenderTask = (task) => {
         label.append(checkbox, customCheck);
         li.append(inp, label, btn_del );
         ul.append(li);
+
         inp.value = task.text
         btn_del.innerHTML = '<img src="/image/delete.svg">'
 
-       //меняем стиль инпута с задачей при клике на чекбокс
-        checkbox.addEventListener("change", function () {
-            if (this.checked) {
-                inp.classList.add('green')
-            } else { 
-                inp.classList.remove('green')
-            }
+        checkbox.checked = task.done;
+        progress.max = SearchTask.length
+        progress.value = countDone
+        
+        //создаем событие при клике
+        checkbox.addEventListener('click', (y) => {
+            checkbox.checked == true ? countDone++ : countDone--
+            markTask(task, checkbox.checked); 
+            RenderTask()
+            
+        })
+      
+        
+        styleCheck(checkbox.checked, inp)
+        
+      
+        //создаем событие при клике на кнопку удаления 
+        btn_del.addEventListener('click', () => {
+            removeTask(task);
+            RenderTask()
         })
         
-
+        
         
     })
+}
+
+    
+  
+
+//меняем цвет задачи при ее выполнении
+const styleCheck = (check, elem) => {
+    if (check == true) {
+        elem.classList.add('green')
+    }
+}
+//меняем состояние чекбокса
+const markTask = (task, mark) => {
+    
+    const index = tasks.findIndex((t) => { return t.id === task.id; })
+    tasks[index].done = !!mark
+    
+}
+// удаляем задачу из массива
+const removeTask = (task) => {
+    const index = tasks.findIndex((t) => { return t.id === task.id })
+    tasks.splice(index, 1);
 }
 
