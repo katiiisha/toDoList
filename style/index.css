@@ -148,7 +148,7 @@ body header {
   justify-content: center;
 }
 body header div {
-  background-image: url(/image/logo.svg);
+  background-image: url(./image/logo.svg);
   width: 92px;
   height: 88px;
 }
@@ -280,13 +280,13 @@ body main .task-block .task-list .task-board .li .check_box {
   display: inline-block;
   width: 75px;
   height: 75px;
-  background-image: url(/image/check_none.svg);
+  background-image: url(./image/check_none.svg);
 }
 body main .task-block .task-list .task-board .li .check_input:checked + .check_box {
-  background: url(/image/check_box.svg);
+  background: url(./image/check_box.svg);
 }
 body main .task-block .img_vibes {
-  background-image: url("/image/bg-disp-tasks.png");
+  background-image: url(./image/bg-disp-tasks.png);
   border-radius: 5px;
   width: 173px;
   height: 516px;
@@ -343,7 +343,7 @@ body main .completing_task p {
     width: 70px;
     height: 70px;
     margin: 0;
-    background-image: url(/image/cb.svg);
+    background-image: url(./image/cb.svg);
   }
   body main .task-block .task-list .task-board .li .btn_del {
     width: 70px;
@@ -352,7 +352,7 @@ body main .completing_task p {
     margin-left: 18px;
   }
   body main .task-block .task-list .task-board .li .check_input:checked + .check_box {
-    background-image: url(/image/cb_check.svg);
+    background-image: url(./image/cb_check.svg);
   }
   body main .task-block .img_vibes {
     height: 509px;
@@ -399,10 +399,10 @@ body main .completing_task p {
     width: 60px;
     height: 60px;
     margin: 0;
-    background-image: url(/image/cb60.svg);
+    background-image: url(./image/cb60.svg);
   }
   body main .task-block .task-list .task-board .li .check_input:checked + .check_box {
-    background-image: url(/image/cb601.svg);
+    background-image: url(./image/cb601.svg);
   }
   body main .task-block .img_vibes {
     height: 500px;
@@ -414,7 +414,7 @@ body main .completing_task p {
 }
 @media (max-width: 719.99px) {
   body {
-    background: url(/image/bg.jpeg);
+    background: url(./image/bg.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -424,7 +424,7 @@ body main .completing_task p {
     color: #e8c190;
   }
   body header div {
-    background-image: url(/image/logo_media.svg);
+    background-image: url(./image/logo_media.svg);
   }
   body main .inp_forms {
     margin-top: 38px;
@@ -478,10 +478,10 @@ body main .completing_task p {
     width: 60px;
     height: 60px;
     margin: 0;
-    background-image: url(/image/cb60.svg);
+    background-image: url(./image/cb60.svg);
   }
   body main .task-block .task-list .task-board .li .check_input:checked + .check_box {
-    background-image: url(/image/cb601.svg);
+    background-image: url(./image/cb601.svg);
   }
   body main .task-block .img_vibes {
     display: none;
@@ -544,7 +544,7 @@ body main .completing_task p {
     width: 65px;
     height: 65px;
     margin: 0;
-    background-image: url(/image/logo65.svg);
+    background-image: url(./image/logo65.svg);
     background-repeat: no-repeat;
   }
   body main .inp_forms {
@@ -586,10 +586,10 @@ body main .completing_task p {
     width: 40px;
     height: 40px;
     margin: 0;
-    background-image: url(/image/cb401.svg);
+    background-image: url(./image/cb401.svg);
   }
   body main .task-block .task-list .task-board .li .check_input:checked + .check_box {
-    background-image: url(/image/cb40.svg);
+    background-image: url(./image/cb40.svg);
   }
   body main .task-block .task-list .task-board .li .btn_del {
     width: 40px;
@@ -623,7 +623,7 @@ body main .completing_task p {
     width: 45px;
     height: 45px;
     margin: 0;
-    background-image: url(/image/logo45.svg);
+    background-image: url(./image/logo45.svg);
     background-repeat: no-repeat;
   }
   body main .inp_forms {
