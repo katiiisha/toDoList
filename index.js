@@ -69,7 +69,7 @@ const RenderTask = (task) => {
         ul.append(li);
 
         inp.value = task.text;
-        btn_del.innerHTML = '<img src="/image/delete.svg">';
+        btn_del.innerHTML = '<img src="./image/delete.svg">';
 
         checkbox.checked = task.done;
         //вычисляем переменные для прогресс-бара 
