@@ -148,7 +148,7 @@ body header {
   justify-content: center;
 }
 body header div {
-  background-image: url("../image/logo.svg");
+  background-image: url(../image/logo.svg);
   width: 92px;
   height: 88px;
 }
@@ -661,7 +661,7 @@ body main .completing_task p {
     width: 5px;
   }
   body main .task-block .task-list .task-board .li .task {
-    width: 150px;
+    width: 140px;
     height: 40px;
     margin: 0;
     margin-right: 5px;
