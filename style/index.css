@@ -136,6 +136,7 @@
 }
 
 body {
+  overscroll-behavior: none;
   margin-top: 40px;
   box-sizing: border-box;
   display: flex;
@@ -145,6 +146,11 @@ body {
 body header {
   display: flex;
   justify-content: center;
+}
+body header div {
+  background-image: url(/image/logo.svg);
+  width: 92px;
+  height: 88px;
 }
 body header h1 {
   font-family: "Joti One";
@@ -156,6 +162,7 @@ body header h1 {
   width: 446px;
   height: 79px;
   margin-left: 33px;
+  color: #402922;
 }
 body main .inp_forms {
   margin-top: 66px;
@@ -303,6 +310,385 @@ body main .completing_task p {
   line-height: 48px;
   letter-spacing: 0.03em;
   margin-top: 13px;
+}
+
+@media (max-width: 1023.99px) {
+  body main .inp_forms {
+    font-size: 29px;
+  }
+  body main .inp_forms .inp {
+    width: 619px;
+  }
+  body main .inp_forms div .add {
+    width: 500px;
+  }
+  body main .inp_forms div .btn {
+    width: 95px;
+  }
+  body main .task-block .task-list {
+    width: 619px;
+    padding: 25px;
+  }
+  body main .task-block .task-list::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 5px;
+    padding-right: 22px;
+  }
+  body main .task-block .task-list .task-board .li .task {
+    width: 386px;
+    height: 70px;
+    margin: 0px 18px 30px 0;
+  }
+  body main .task-block .task-list .task-board .li .check_box {
+    width: 70px;
+    height: 70px;
+    margin: 0;
+    background-image: url(/image/cb.svg);
+  }
+  body main .task-block .task-list .task-board .li .btn_del {
+    width: 70px;
+    height: 70px;
+    padding: 10px;
+    margin-left: 18px;
+  }
+  body main .task-block .task-list .task-board .li .check_input:checked + .check_box {
+    background-image: url(/image/cb_check.svg);
+  }
+  body main .task-block .img_vibes {
+    height: 509px;
+  }
+  body main .completing_task .progress {
+    width: 814px;
+  }
+}
+@media (min-width: 720px) and (max-width: 949.99px) {
+  body main .inp_forms .inp {
+    width: 600px;
+    font-size: 28px;
+  }
+  body main .inp_forms div .add {
+    width: 503px;
+    margin-right: 15px;
+  }
+  body main .inp_forms div .btn {
+    width: 85px;
+  }
+  body main .task-block .task-list {
+    width: 545px;
+    padding: 20px;
+  }
+  body main .task-block .task-list .task-board .li .task {
+    width: 352px;
+    height: 60px;
+    margin: 0;
+    margin-right: 15px;
+    margin-bottom: 20px;
+  }
+  body main .task-block .task-list .task-board .li .btn_del {
+    width: 60px;
+    height: 60px;
+    padding: 5px;
+    margin-left: 10px;
+  }
+  body main .task-block .task-list .task-board .li .btn_del img {
+    width: 38px;
+    height: 38px;
+    margin: 0;
+  }
+  body main .task-block .task-list .task-board .li .check_box {
+    width: 60px;
+    height: 60px;
+    margin: 0;
+    background-image: url(/image/cb60.svg);
+  }
+  body main .task-block .task-list .task-board .li .check_input:checked + .check_box {
+    background-image: url(/image/cb601.svg);
+  }
+  body main .task-block .img_vibes {
+    height: 500px;
+    width: 134px;
+  }
+  body main .completing_task .progress {
+    width: 685px;
+  }
+}
+@media (max-width: 719.99px) {
+  body {
+    background: url(/image/bg.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+  }
+  body header h1 {
+    color: #e8c190;
+  }
+  body header div {
+    background-image: url(/image/logo_media.svg);
+  }
+  body main .inp_forms {
+    margin-top: 38px;
+  }
+  body main .inp_forms .inp {
+    width: 580px;
+    border-color: #b47364;
+    margin-right: 0;
+    font-size: 25px;
+  }
+  body main .inp_forms div .add {
+    width: 490px;
+    margin-right: 10px;
+  }
+  body main .inp_forms div .btn {
+    width: 81px;
+    border-color: #b47364;
+  }
+  body main .task-block {
+    justify-content: center;
+  }
+  body main .task-block .task-list {
+    width: 580px;
+    margin: 0;
+    border-color: #b47364;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.7);
+  }
+  body main .task-block .task-list::-webkit-scrollbar {
+    background: none;
+  }
+  body main .task-block .task-list .task-board .li .task {
+    width: 390px;
+    height: 60px;
+    margin: 0;
+    margin-right: 10px;
+    margin-bottom: 20px;
+  }
+  body main .task-block .task-list .task-board .li .btn_del {
+    width: 60px;
+    height: 60px;
+    padding: 5px;
+    margin-left: 10px;
+  }
+  body main .task-block .task-list .task-board .li .btn_del img {
+    width: 38px;
+    height: 38px;
+    margin: 0;
+  }
+  body main .task-block .task-list .task-board .li .check_box {
+    width: 60px;
+    height: 60px;
+    margin: 0;
+    background-image: url(/image/cb60.svg);
+  }
+  body main .task-block .task-list .task-board .li .check_input:checked + .check_box {
+    background-image: url(/image/cb601.svg);
+  }
+  body main .task-block .img_vibes {
+    display: none;
+  }
+  body main .completing_task .progress {
+    width: 580px;
+  }
+  body main .completing_task p {
+    margin-bottom: 100px;
+    color: #e8c090;
+  }
+}
+@media (min-width: 481px) and (max-width: 599.99px) {
+  body header h1 {
+    font-size: 54px;
+    width: 395px;
+    padding-left: 20px;
+    margin: 0;
+  }
+  body header div {
+    width: 74px;
+    height: 83px;
+    margin: 0;
+  }
+  body main .inp_forms .inp {
+    width: 440px;
+    height: 55px;
+  }
+  body main .inp_forms div .add {
+    width: 374px;
+  }
+  body main .inp_forms div .btn {
+    width: 55px;
+    height: 55px;
+    padding: 5px;
+  }
+  body main .inp_forms div .btn img {
+    width: 30px;
+    height: 30px;
+    margin: 0;
+  }
+  body main .task-block .task-list {
+    width: 440px;
+    padding: 15px;
+  }
+  body main .task-block .task-list .task-board .li .task {
+    width: 250px;
+  }
+  body main .completing_task .progress {
+    width: 440px;
+  }
+}
+@media (max-width: 480.99px) {
+  body header h1 {
+    width: 269px;
+    font-size: 40px;
+    margin-left: 10px;
+  }
+  body header div {
+    width: 65px;
+    height: 65px;
+    margin: 0;
+    background-image: url(/image/logo65.svg);
+    background-repeat: no-repeat;
+  }
+  body main .inp_forms {
+    margin-top: 20px;
+  }
+  body main .inp_forms .inp {
+    width: 320px;
+    height: 40px;
+    border: 3px solid #b47364;
+    font-size: 18px;
+  }
+  body main .inp_forms div .add {
+    width: 270px;
+  }
+  body main .inp_forms div .btn {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border: 3px solid #b47364;
+  }
+  body main .inp_forms div .btn img {
+    width: 24px;
+    height: 24px;
+    margin: 0;
+  }
+  body main .task-block .task-list {
+    width: 320px;
+    height: 270px;
+    padding: 10px;
+    border: 3px solid #b47364;
+  }
+  body main .task-block .task-list .task-board .li .task {
+    width: 190px;
+    height: 40px;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  body main .task-block .task-list .task-board .li .check_box {
+    width: 40px;
+    height: 40px;
+    margin: 0;
+    background-image: url(/image/cb401.svg);
+  }
+  body main .task-block .task-list .task-board .li .check_input:checked + .check_box {
+    background-image: url(/image/cb40.svg);
+  }
+  body main .task-block .task-list .task-board .li .btn_del {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+  }
+  body main .task-block .task-list .task-board .li .btn_del img {
+    width: 30px;
+    height: 30px;
+    margin: 0;
+  }
+  body main .completing_task .progress {
+    width: 320px;
+    height: 20px;
+    margin: 0px;
+  }
+  body main .completing_task .progress p {
+    font-size: 30px;
+  }
+}
+@media (max-width: 329.99px) {
+  body header h1 {
+    width: 210px;
+    height: 45px;
+    margin: 0;
+    margin-left: 10px;
+    font-size: 28px;
+    line-height: 49px;
+  }
+  body header div {
+    width: 45px;
+    height: 45px;
+    margin: 0;
+    background-image: url(/image/logo45.svg);
+    background-repeat: no-repeat;
+  }
+  body main .inp_forms {
+    margin-top: 25px;
+  }
+  body main .inp_forms .inp {
+    width: 260px;
+    height: 45px;
+    padding: 0px;
+    padding-left: 9px;
+    font-size: 18px;
+    border-width: 3px;
+  }
+  body main .inp_forms div .add {
+    width: 200px;
+  }
+  body main .inp_forms div .btn {
+    width: 45px;
+    height: 45px;
+    padding: 0;
+    border-width: 3px;
+  }
+  body main .inp_forms div .btn img {
+    width: 25px;
+    height: 25px;
+    margin: 0;
+  }
+  body main .task-block .task-list {
+    border-width: 3px;
+    width: 260px;
+    height: 267px;
+    padding: 4px;
+  }
+  body main .task-block .task-list::-webkit-scrollbar {
+    width: 5px;
+  }
+  body main .task-block .task-list .task-board .li .task {
+    width: 150px;
+    height: 40px;
+    margin: 0;
+    margin-right: 5px;
+    border-left-width: 10px;
+    margin-bottom: 13px;
+  }
+  body main .task-block .task-list .task-board .li .task.green {
+    border-left-width: 10px;
+  }
+  body main .task-block .task-list .task-board .li .btn_del {
+    width: 40px;
+    height: 40px;
+    margin: 0;
+    margin-left: 5px;
+  }
+  body main .task-block .task-list .task-board .li .btn_del img {
+    width: 30px;
+    height: 30px;
+    padding: 0;
+  }
+  body main .completing_task .progress {
+    width: 260px;
+  }
+  body main .completing_task p {
+    font-size: 24px;
+    margin-top: 0;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

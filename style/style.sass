@@ -1,6 +1,7 @@
 //imports
 @import fonts
-@import media
+
+
 //colors
 $border-color: #815F34
 $task-done: #01504A
@@ -27,6 +28,7 @@ $scroll-hover: #b4874d
     margin: 0
  
 body 
+    overscroll-behavior: none
     margin-top: 40px
     box-sizing: border-box
     display: flex
@@ -36,11 +38,16 @@ body
     header
         display: flex
         justify-content: center
+        div 
+            background-image: url(/image/logo.svg)
+            width: 92px
+            height: 88px
         h1 
             +font_style('Joti One', normal, 400, 64px, 85px, 0.03em)
             width: 446px
             height: 79px
             margin-left: 33px
+            color: #402922
     main 
         .inp_forms
             margin-top: 66px
@@ -52,6 +59,7 @@ body
                 margin-bottom: 13px
                 margin-right: 49px 
                 padding-left: 15px
+                
             div 
                 display: flex
                 align-items: center
@@ -134,7 +142,16 @@ body
             p 
                 +font_style('Joti One', normal, 400, 36px, 48px, 0.03em)
                 margin-top: 13px 
+
+//
+@import media_style
+
             
+            
+        
+  
+    
+         
         
         
         

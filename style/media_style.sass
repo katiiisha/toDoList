@@ -1,0 +1,290 @@
+=whp($widht, $height, $padding)
+    width: $widht
+    height: $height
+    padding: $padding
+
+=whm($widht, $height, $margin)
+    width: $widht
+    height: $height
+    margin: $margin
+    
+@media (max-width: 1023.99px)
+    body
+        main
+            .inp_forms
+                font-size: 29px
+                .inp 
+                    width: 619px
+                div 
+                    .add 
+                        width: 500px
+                    .btn 
+                        width: 95px
+            .task-block
+                .task-list 
+                    width: 619px
+                    padding: 25px
+                    &::-webkit-scrollbar 
+                        width: 10px
+                        border-radius: 5px
+                        padding-right: 22px 
+                    .task-board
+                        .li
+                            .task 
+                                +whm(386px, 70px, 0px 18px 30px 0)
+                            .check_box 
+                                +whm(70px, 70px, 0)
+                                background-image: url(/image/cb.svg)
+                            .btn_del
+                                +whp(70px, 70px, 10px)
+                                margin-left: 18px
+                            .check_input:checked+.check_box 
+                                background-image: url(/image/cb_check.svg)
+                .img_vibes 
+                    height: 509px
+            .completing_task 
+                .progress
+                    width: 814px
+
+@media (min-width: 720px) and (max-width: 949.99px)
+    body
+        main
+            .inp_forms 
+                .inp
+                    width: 600px
+                    font-size: 28px  
+                div 
+                    .add
+                        width: 503px
+                        margin-right: 15px
+                    .btn 
+                        width: 85px
+            .task-block
+                .task-list 
+                    width: 545px
+                    padding: 20px
+                    .task-board
+                        .li
+                            .task 
+                                +whm(352px, 60px, 0)
+                                margin-right: 15px
+                                margin-bottom: 20px
+                            .btn_del
+                                +whp(60px, 60px, 5px)
+                                margin-left: 10px
+                                img 
+                                    +whm(38px, 38px, 0)
+                            .check_box 
+                                +whm(60px, 60px, 0)
+                                background-image: url(/image/cb60.svg)
+                            .check_input:checked+.check_box 
+                                background-image: url(/image/cb601.svg)
+                .img_vibes 
+                    height: 500px
+                    width: 134px
+            .completing_task 
+                    .progress
+                        width: 685px
+
+@media (max-width: 719.99px)
+    body
+        background: url(/image/bg.jpeg)
+        background-repeat: no-repeat
+        background-size: cover
+        background-position: center center
+        background-attachment: fixed
+        header
+            h1 
+                color: #e8c190
+            div
+                background-image: url(/image/logo_media.svg)
+        main
+            .inp_forms 
+                margin-top: 38px
+                .inp 
+                    width: 580px
+                    border-color:#b47364
+                    margin-right: 0
+                    font-size: 25px
+                div 
+                    .add
+                        width: 490px
+                        margin-right: 10px
+                    .btn 
+                        width: 81px
+                        border-color:#b47364
+            .task-block 
+                justify-content: center
+                .task-list 
+                    width: 580px
+                    margin: 0
+                    border-color:#b47364
+                    padding: 20px
+                    background: rgba(255, 255, 255, 0.7)
+                    &::-webkit-scrollbar
+                        background: none        
+                    .task-board
+                        .li
+                            .task 
+                                +whm(390px, 60px, 0)
+                                margin-right: 10px
+                                margin-bottom: 20px
+                            .btn_del
+                                +whp(60px, 60px, 5px)
+                                margin-left: 10px
+                                img 
+                                    +whm(38px, 38px, 0)
+                            .check_box 
+                                +whm(60px, 60px, 0)
+                                background-image: url(/image/cb60.svg)
+                            .check_input:checked+.check_box 
+                                background-image: url(/image/cb601.svg)
+                .img_vibes
+                    display: none
+            .completing_task 
+                .progress
+                    width: 580px
+                p 
+                    margin-bottom: 100px
+                    color: #e8c090
+@media (min-width: 481px) and (max-width: 599.99px)
+    body
+        header
+            h1
+                font-size: 54px
+                width: 395px
+                padding-left: 20px
+                margin: 0
+            div
+                +whm(74px, 83px, 0)
+        main
+            .inp_forms
+                .inp
+                    width: 440px
+                    height: 55px
+                div
+                    .add
+                        width: 374px
+                    .btn
+                        +whp(55px, 55px, 5px)
+                        img 
+                            +whm(30px, 30px, 0)
+            .task-block
+                .task-list 
+                    width: 440px
+                    padding: 15px
+                    .task-board
+                        .li
+                            .task
+                                width: 250px   
+            .completing_task 
+                .progress
+                    width: 440px
+@media  (max-width: 480.99px)
+    body 
+        header
+            h1 
+                width: 269px
+                font-size: 40px
+                margin-left: 10px
+            div 
+                +whm(65px, 65px, 0)
+                background-image: url(/image/logo65.svg)
+                background-repeat: no-repeat
+        main
+            .inp_forms
+                margin-top: 20px
+                .inp
+                    width: 320px
+                    height: 40px
+                    border: 3px solid #b47364
+                    font-size: 18px
+                div
+                    .add
+                        width: 270px
+                    .btn
+                        +whp(40px, 40px, 0)
+                        border: 3px solid #b47364
+                        img
+                            +whm(24px, 24px, 0)
+            .task-block
+                .task-list
+                    +whp(320px, 270px, 10px)
+                    border: 3px solid #b47364
+                    .task-board
+                        .li 
+                            .task
+                                width: 190px
+                                height: 40px
+                                font-size: 14px
+                                margin-bottom: 10px
+                            .check_box 
+                                +whm(40px, 40px, 0)
+                                background-image: url(/image/cb401.svg)
+                            .check_input:checked+.check_box 
+                                background-image: url(/image/cb40.svg)
+                            .btn_del
+                                +whp(40px, 40px, 0)
+                                img
+                                    +whm(30px, 30px, 0)
+            .completing_task 
+                .progress
+                    +whm(320px, 20px, 0px)
+                    p 
+                        font-size: 30px 
+@media (max-width: 329.99px)      
+    body
+        header
+            h1
+                +whm(210px, 45px, 0)
+                margin-left: 10px
+                font-size: 28px
+                line-height: 49px
+            div 
+                +whm(45px, 45px, 0)
+                background-image: url(/image/logo45.svg)
+                background-repeat: no-repeat
+        main 
+            .inp_forms
+                margin-top: 25px
+                .inp
+                    +whp(260px, 45px, 0px)
+                    padding-left: 9px
+                    font-size: 18px
+                    border-width: 3px
+                div
+                    .add
+                        width: 200px
+                    .btn 
+                        +whp(45px, 45px, 0)
+                        border-width: 3px
+                        img 
+                            +whm(25px, 25px, 0)
+            .task-block
+                .task-list
+                    border-width: 3px 
+                    +whp(260px, 267px, 4px)  
+                    &::-webkit-scrollbar 
+                        width: 5px
+                        
+                    .task-board
+                        .li 
+                            .task
+                                +whm(150px, 40px, 0)
+                                margin-right: 5px
+                                border-left-width: 10px
+                                margin-bottom: 13px
+                                &.green
+                                    border-left-width: 10px
+                            .btn_del
+                                +whm(40px, 40px, 0)
+                                margin-left: 5px
+                                img
+                                    +whp(30px, 30px, 0)
+            .completing_task 
+                    .progress
+                        width: 260px
+                    p 
+                        font-size: 24px
+                        margin-top: 0
+
