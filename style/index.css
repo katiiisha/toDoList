@@ -585,6 +585,10 @@ body main .completing_task p {
     font-size: 14px;
     margin-bottom: 10px;
   }
+  body main .task-block .task-list .task-board .li .check {
+    width: 40px;
+    height: 40px;
+  }
   body main .task-block .task-list .task-board .li .check_box {
     width: 40px;
     height: 40px;
