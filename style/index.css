@@ -281,6 +281,9 @@ body main .task-block .task-list .task-board .li .check_box {
   width: 75px;
   height: 75px;
   background-image: url(../image/check_none.svg);
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  background-size: contain;
 }
 body main .task-block .task-list .task-board .li .check_input:checked + .check_box {
   background: url(../image/check_box.svg);
@@ -661,7 +664,7 @@ body main .completing_task p {
     width: 5px;
   }
   body main .task-block .task-list .task-board .li .task {
-    width: 140px;
+    width: 150px;
     height: 40px;
     margin: 0;
     margin-right: 5px;
