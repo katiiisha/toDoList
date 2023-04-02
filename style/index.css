@@ -278,6 +278,7 @@ body main .task-block .task-list .task-board .li .check_input {
 }
 body main .task-block .task-list .task-board .li .check_box {
   display: inline-block;
+  vertical-align: top;
   width: 75px;
   height: 75px;
   background-image: url(../image/check_none.svg);
