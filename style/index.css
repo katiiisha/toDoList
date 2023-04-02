@@ -285,6 +285,7 @@ body main .task-block .task-list .task-board .li .check_box {
   -webkit-background-size: contain;
   -moz-background-size: contain;
   background-size: contain;
+  line-height: 0;
 }
 body main .task-block .task-list .task-board .li .check_input:checked + .check_box {
   background: url(../image/check_box.svg);
